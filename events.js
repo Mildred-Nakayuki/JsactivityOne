@@ -1,20 +1,16 @@
-const btn = document.querySelector('#btn1');
+const btn1 = document.querySelector('#btn1');
 const header1 = document.querySelector('.header1');
-const btn2 = document.querySelector('.btn2')
-const btn3 = document.querySelector('.btn3')
 
+const colors =["red","black","blue","Green"];
+var i= 0;
 
 btn1.addEventListener('click',()=>{
-    header1.style.color = 'red';
-    console.log('text change 2');
-})
-
-btn2.addEventListener('click',()=>{
-  header1.style.color = 'blue';
-  console.log('text change');
-})
-
-btn3.addEventListener('click',()=>{
-    header1.style.color = 'white';
-    console.log('text change');
+    document.body.style.backgroundColor = colors[i];
+    i = (i + 1) % colors.length;  
   })
+
+  /*let color = getrandomNo();
+  getrandomNo(){
+    Math.floor(Math.random()*colors.length)*/
+
+  
